@@ -1,0 +1,65 @@
+import Foundation
+import Quartz
+
+func ==(lhs: [AnyHashable: Any], rhs: [AnyHashable: Any] ) -> Bool {
+    return NSDictionary(dictionary: lhs).isEqual(to: rhs)
+}
+
+// MARK: PDFDocument data comparison
+
+public extension PDFDocument {
+    
+    public func compareMetadata(to other: PDFDocument) -> Bool {
+        guard
+            let selfDocumentAttributes = self.documentAttributes,
+            let otherDocumentAttributes = other.documentAttributes else {
+                return false
+        }
+        
+        return selfDocumentAttributes == otherDocumentAttributes
+    }
+
+    public func compareData(to other: PDFDocument) -> Bool {
+        guard
+            let selfData = self.dataRepresentation(),
+            let otherData = other.dataRepresentation(),
+            selfData.count == otherData.count
+            else {
+                // Files have different byte count
+                return false
+        }
+        
+        // Enumerate bytes to obtain a delta
+        var deltaDataIndexes: [Int] = []
+        for (index, selfByte) in selfData.enumerated() {
+            let otherByte = otherData[index]
+            if selfByte != otherByte {
+                deltaDataIndexes.append(index)
+            }
+        }
+        
+        // Check delta index array, analyze string differences
+        if
+            let firstIndex = deltaDataIndexes.first,
+            let lastIndex = deltaDataIndexes.last,
+            let selfDeltaString = String(data: selfData.subdata(in: firstIndex..<lastIndex), encoding: .utf8),
+            let otherDeltaString = String(data: otherData.subdata(in: firstIndex..<lastIndex), encoding: .utf8) {
+            
+            if
+                isComparionValid(string: selfDeltaString) &&
+                isComparionValid(string: otherDeltaString) {
+                return true
+            }
+        } else {
+            // Assume equality when delta index array is empty
+            return true
+        }
+        
+        return false
+    }
+    
+    func isComparionValid(string: String) -> Bool {
+        let regex = "^[a-f0-9]*>\\n<[a-f0-9]*"
+        return string =~ regex
+    }
+}
