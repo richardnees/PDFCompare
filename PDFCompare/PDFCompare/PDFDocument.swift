@@ -46,8 +46,8 @@ public extension PDFDocument {
             let otherDeltaString = String(data: otherData.subdata(in: firstIndex..<lastIndex), encoding: .utf8) {
             
             if
-                isComparionValid(string: selfDeltaString) &&
-                isComparionValid(string: otherDeltaString) {
+                isComparisonValid(string: selfDeltaString) &&
+                isComparisonValid(string: otherDeltaString) {
                 return true
             }
         } else {
@@ -58,7 +58,7 @@ public extension PDFDocument {
         return false
     }
     
-    func isComparionValid(string: String) -> Bool {
+    func isComparisonValid(string: String) -> Bool {
         let regex = "^[a-f0-9]*>\\n<[a-f0-9]*"
         return string =~ regex
     }
