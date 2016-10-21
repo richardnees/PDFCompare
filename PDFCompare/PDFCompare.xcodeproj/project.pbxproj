@@ -8,10 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		954897E21DB8FA7700AB15E3 /* PDFCompare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 954897D81DB8FA7600AB15E3 /* PDFCompare.framework */; };
-		954897E71DB8FA7700AB15E3 /* PDFCompareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954897E61DB8FA7700AB15E3 /* PDFCompareTests.swift */; };
 		954897E91DB8FA7700AB15E3 /* PDFCompare.h in Headers */ = {isa = PBXBuildFile; fileRef = 954897DB1DB8FA7600AB15E3 /* PDFCompare.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		954897F41DB8FAB200AB15E3 /* PDFDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954897F21DB8FAB200AB15E3 /* PDFDocument.swift */; };
 		954897F51DB8FAB200AB15E3 /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954897F31DB8FAB200AB15E3 /* Regex.swift */; };
+		955EFCFB1DBA047100753236 /* PDFDocumentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955EFCFA1DBA047100753236 /* PDFDocumentTests.swift */; };
+		955EFD001DBA04DE00753236 /* 1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 955EFCFD1DBA04DE00753236 /* 1.pdf */; };
+		955EFD011DBA04DE00753236 /* 2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 955EFCFE1DBA04DE00753236 /* 2.pdf */; };
+		955EFD021DBA04DE00753236 /* 3.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 955EFCFF1DBA04DE00753236 /* 3.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,10 +32,13 @@
 		954897DB1DB8FA7600AB15E3 /* PDFCompare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDFCompare.h; sourceTree = "<group>"; };
 		954897DC1DB8FA7600AB15E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		954897E11DB8FA7700AB15E3 /* PDFCompareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PDFCompareTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		954897E61DB8FA7700AB15E3 /* PDFCompareTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFCompareTests.swift; sourceTree = "<group>"; };
 		954897E81DB8FA7700AB15E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		954897F21DB8FAB200AB15E3 /* PDFDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFDocument.swift; sourceTree = "<group>"; };
 		954897F31DB8FAB200AB15E3 /* Regex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Regex.swift; sourceTree = "<group>"; };
+		955EFCFA1DBA047100753236 /* PDFDocumentTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFDocumentTests.swift; sourceTree = "<group>"; };
+		955EFCFD1DBA04DE00753236 /* 1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1.pdf; sourceTree = "<group>"; };
+		955EFCFE1DBA04DE00753236 /* 2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 2.pdf; sourceTree = "<group>"; };
+		955EFCFF1DBA04DE00753236 /* 3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 3.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,10 +92,21 @@
 		954897E51DB8FA7700AB15E3 /* PDFCompareTests */ = {
 			isa = PBXGroup;
 			children = (
-				954897E61DB8FA7700AB15E3 /* PDFCompareTests.swift */,
 				954897E81DB8FA7700AB15E3 /* Info.plist */,
+				955EFCFC1DBA04CC00753236 /* TestAssets */,
+				955EFCFA1DBA047100753236 /* PDFDocumentTests.swift */,
 			);
 			path = PDFCompareTests;
+			sourceTree = "<group>";
+		};
+		955EFCFC1DBA04CC00753236 /* TestAssets */ = {
+			isa = PBXGroup;
+			children = (
+				955EFCFD1DBA04DE00753236 /* 1.pdf */,
+				955EFCFE1DBA04DE00753236 /* 2.pdf */,
+				955EFCFF1DBA04DE00753236 /* 3.pdf */,
+			);
+			name = TestAssets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +211,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				955EFD021DBA04DE00753236 /* 3.pdf in Resources */,
+				955EFD001DBA04DE00753236 /* 1.pdf in Resources */,
+				955EFD011DBA04DE00753236 /* 2.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,7 +233,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				954897E71DB8FA7700AB15E3 /* PDFCompareTests.swift in Sources */,
+				955EFCFB1DBA047100753236 /* PDFDocumentTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
