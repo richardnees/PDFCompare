@@ -20,6 +20,14 @@ class PDFDocumentTests: XCTestCase {
         super.tearDown()
     }
     
+    func test_validateDataWithRegexFails() {
+        let first = "1".data(using: .utf8)!
+        let second = "2".data(using: .utf8)!
+        
+        let comparisonResult = originalPDFDocument.validate(selfData: first, otherData: second)
+        XCTAssertFalse(comparisonResult)
+    }
+
     func test_compareDataIdentical() {
         let comparisonResult = originalPDFDocument.compareData(to: originalPDFDocument)
         XCTAssertTrue(comparisonResult)
@@ -35,11 +43,29 @@ class PDFDocumentTests: XCTestCase {
         XCTAssertFalse(comparisonResult)
     }
 
+    func test_compareSelfMetadataEmpty() {
+        let noMetadata = PDFDocument()
+        let comparisonResult = noMetadata.compareMetadata(to: originalPDFDocument)
+        XCTAssertFalse(comparisonResult)
+    }
+
+    func test_compareOtherMetadataEmpty() {
+        let noMetadata = PDFDocument()
+        let comparisonResult = originalPDFDocument.compareMetadata(to: noMetadata)
+        XCTAssertFalse(comparisonResult)
+    }
+
+    func test_compareBothMetadataEmpty() {
+        let noMetadata = PDFDocument()
+        let comparisonResult = noMetadata.compareMetadata(to: noMetadata)
+        XCTAssertFalse(comparisonResult)
+    }
+
     func test_compareMetadataIdentical() {
         let comparisonResult = originalPDFDocument.compareMetadata(to: originalPDFDocument)
         XCTAssertTrue(comparisonResult)
     }
-    
+
     func test_compareMetadataEqual() {
         let comparisonResult = originalPDFDocument.compareMetadata(to: sameDataPDFDocument)
         XCTAssertFalse(comparisonResult)

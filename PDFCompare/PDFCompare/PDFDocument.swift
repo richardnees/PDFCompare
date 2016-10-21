@@ -12,7 +12,9 @@ public extension PDFDocument {
     public func compareMetadata(to other: PDFDocument) -> Bool {
         guard
             let selfDocumentAttributes = self.documentAttributes,
-            let otherDocumentAttributes = other.documentAttributes else {
+            selfDocumentAttributes.count > 0,
+            let otherDocumentAttributes = other.documentAttributes,
+            otherDocumentAttributes.count > 0 else {
                 return false
         }
         
@@ -29,6 +31,10 @@ public extension PDFDocument {
                 return false
         }
         
+        return validate(selfData: selfData, otherData: otherData)
+    }
+    
+    func validate(selfData: Data, otherData: Data) -> Bool {
         // Enumerate bytes to obtain a delta
         var deltaDataIndexes: [Int] = []
         for (index, selfByte) in selfData.enumerated() {
@@ -45,14 +51,9 @@ public extension PDFDocument {
             let selfDeltaString = String(data: selfData.subdata(in: firstIndex..<lastIndex), encoding: .utf8),
             let otherDeltaString = String(data: otherData.subdata(in: firstIndex..<lastIndex), encoding: .utf8) {
             
-            if
-                isComparisonValid(string: selfDeltaString) &&
-                isComparisonValid(string: otherDeltaString) {
+            if isComparisonValid(string: selfDeltaString) && isComparisonValid(string: otherDeltaString) {
                 return true
             }
-        } else {
-            // Assume equality when delta index array is empty
-            return true
         }
         
         return false
