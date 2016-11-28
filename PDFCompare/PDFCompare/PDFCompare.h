@@ -1,12 +1,4 @@
-//
-//  PDFCompare.h
-//  PDFCompare
-//
-//  Created by Richard Nees on 20/10/2016.
-//  Copyright © 2016 VIMN. All rights reserved.
-//
-
-#import <Cocoa/Cocoa.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for PDFCompare.
 FOUNDATION_EXPORT double PDFCompareVersionNumber;

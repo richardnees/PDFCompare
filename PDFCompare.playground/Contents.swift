@@ -1,3 +1,8 @@
+/*:
+ # PDFCompare
+ Isn't **this** ***amazing***?
+*/
+
 import Cocoa
 import Quartz
 import PDFCompare
