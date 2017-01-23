@@ -2,9 +2,15 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:PDFCompare.playground">
+      location = "group:Regex/Regex.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:PDFCompare/PDFCompare.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:PDF Compare/PDF Compare.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:PDFCompare.playground">
    </FileRef>
 </Workspace>

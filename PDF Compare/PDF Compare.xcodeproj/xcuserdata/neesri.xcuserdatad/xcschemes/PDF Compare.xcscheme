@@ -14,10 +14,38 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "9570779E1E3603120038F894"
+               BuildableName = "Regex.framework"
+               BlueprintName = "Regex"
+               ReferencedContainer = "container:../Regex/Regex.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "954897D71DB8FA7600AB15E3"
                BuildableName = "PDFCompare.framework"
                BlueprintName = "PDFCompare"
-               ReferencedContainer = "container:PDFCompare.xcodeproj">
+               ReferencedContainer = "container:../PDFCompare/PDFCompare.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "9570777D1E3602B20038F894"
+               BuildableName = "PDF Compare.app"
+               BlueprintName = "PDF Compare"
+               ReferencedContainer = "container:PDF Compare.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -26,27 +54,16 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES"
-      codeCoverageEnabled = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "954897E01DB8FA7700AB15E3"
-               BuildableName = "PDFCompareTests.xctest"
-               BlueprintName = "PDFCompareTests"
-               ReferencedContainer = "container:PDFCompare.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "954897D71DB8FA7600AB15E3"
-            BuildableName = "PDFCompare.framework"
-            BlueprintName = "PDFCompare"
-            ReferencedContainer = "container:PDFCompare.xcodeproj">
+            BlueprintIdentifier = "9570777D1E3602B20038F894"
+            BuildableName = "PDF Compare.app"
+            BlueprintName = "PDF Compare"
+            ReferencedContainer = "container:PDF Compare.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -62,15 +79,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "954897D71DB8FA7600AB15E3"
-            BuildableName = "PDFCompare.framework"
-            BlueprintName = "PDFCompare"
-            ReferencedContainer = "container:PDFCompare.xcodeproj">
+            BlueprintIdentifier = "9570777D1E3602B20038F894"
+            BuildableName = "PDF Compare.app"
+            BlueprintName = "PDF Compare"
+            ReferencedContainer = "container:PDF Compare.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -80,15 +98,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "954897D71DB8FA7600AB15E3"
-            BuildableName = "PDFCompare.framework"
-            BlueprintName = "PDFCompare"
-            ReferencedContainer = "container:PDFCompare.xcodeproj">
+            BlueprintIdentifier = "9570777D1E3602B20038F894"
+            BuildableName = "PDF Compare.app"
+            BlueprintName = "PDF Compare"
+            ReferencedContainer = "container:PDF Compare.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

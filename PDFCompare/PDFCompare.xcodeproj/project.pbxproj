@@ -10,11 +10,11 @@
 		954897E21DB8FA7700AB15E3 /* PDFCompare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 954897D81DB8FA7600AB15E3 /* PDFCompare.framework */; };
 		954897E91DB8FA7700AB15E3 /* PDFCompare.h in Headers */ = {isa = PBXBuildFile; fileRef = 954897DB1DB8FA7600AB15E3 /* PDFCompare.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		954897F41DB8FAB200AB15E3 /* PDFDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954897F21DB8FAB200AB15E3 /* PDFDocument.swift */; };
-		954897F51DB8FAB200AB15E3 /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954897F31DB8FAB200AB15E3 /* Regex.swift */; };
 		955EFCFB1DBA047100753236 /* PDFDocumentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955EFCFA1DBA047100753236 /* PDFDocumentTests.swift */; };
 		955EFD001DBA04DE00753236 /* 1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 955EFCFD1DBA04DE00753236 /* 1.pdf */; };
 		955EFD011DBA04DE00753236 /* 2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 955EFCFE1DBA04DE00753236 /* 2.pdf */; };
 		955EFD021DBA04DE00753236 /* 3.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 955EFCFF1DBA04DE00753236 /* 3.pdf */; };
+		957077B51E3604770038F894 /* Regex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 957077B41E3604770038F894 /* Regex.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,11 +34,11 @@
 		954897E11DB8FA7700AB15E3 /* PDFCompareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PDFCompareTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		954897E81DB8FA7700AB15E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		954897F21DB8FAB200AB15E3 /* PDFDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFDocument.swift; sourceTree = "<group>"; };
-		954897F31DB8FAB200AB15E3 /* Regex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Regex.swift; sourceTree = "<group>"; };
 		955EFCFA1DBA047100753236 /* PDFDocumentTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFDocumentTests.swift; sourceTree = "<group>"; };
 		955EFCFD1DBA04DE00753236 /* 1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1.pdf; sourceTree = "<group>"; };
 		955EFCFE1DBA04DE00753236 /* 2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 2.pdf; sourceTree = "<group>"; };
 		955EFCFF1DBA04DE00753236 /* 3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 3.pdf; sourceTree = "<group>"; };
+		957077B41E3604770038F894 /* Regex.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Regex.framework; path = "../../../Library/Developer/Xcode/DerivedData/PDFCompare-hetcxfyxdfhoqyganuncjduvkhgc/Build/Products/Debug/Regex.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				957077B51E3604770038F894 /* Regex.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +67,7 @@
 				954897DA1DB8FA7600AB15E3 /* PDFCompare */,
 				954897E51DB8FA7700AB15E3 /* PDFCompareTests */,
 				954897D91DB8FA7600AB15E3 /* Products */,
+				957077B31E3604770038F894 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,7 +86,6 @@
 				954897DC1DB8FA7600AB15E3 /* Info.plist */,
 				954897DB1DB8FA7600AB15E3 /* PDFCompare.h */,
 				954897F21DB8FAB200AB15E3 /* PDFDocument.swift */,
-				954897F31DB8FAB200AB15E3 /* Regex.swift */,
 			);
 			path = PDFCompare;
 			sourceTree = "<group>";
@@ -107,6 +108,14 @@
 				955EFCFF1DBA04DE00753236 /* 3.pdf */,
 			);
 			name = TestAssets;
+			sourceTree = "<group>";
+		};
+		957077B31E3604770038F894 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				957077B41E3604770038F894 /* Regex.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,7 +175,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = VIMN;
 				TargetAttributes = {
 					954897D71DB8FA7600AB15E3 = {
@@ -225,7 +234,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				954897F41DB8FAB200AB15E3 /* PDFDocument.swift in Sources */,
-				954897F51DB8FAB200AB15E3 /* Regex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +274,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -289,7 +298,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -319,6 +328,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -336,7 +346,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 				SUPPORTED_PLATFORMS = macosx;
@@ -360,7 +370,7 @@
 				INFOPLIST_FILE = PDFCompare/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.vimn.PDFCompare;
+				PRODUCT_BUNDLE_IDENTIFIER = com.richardnees.PDFCompare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -381,7 +391,7 @@
 				INFOPLIST_FILE = PDFCompare/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.vimn.PDFCompare;
+				PRODUCT_BUNDLE_IDENTIFIER = com.richardnees.PDFCompare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -396,7 +406,7 @@
 				DEVELOPMENT_TEAM = S6PH7FUNVK;
 				INFOPLIST_FILE = PDFCompareTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.vimn.PDFCompareTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.richardnees.PDFCompareTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -410,7 +420,7 @@
 				DEVELOPMENT_TEAM = S6PH7FUNVK;
 				INFOPLIST_FILE = PDFCompareTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.vimn.PDFCompareTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.richardnees.PDFCompareTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
