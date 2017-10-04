@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,7 +14,7 @@
 		955EFD001DBA04DE00753236 /* 1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 955EFCFD1DBA04DE00753236 /* 1.pdf */; };
 		955EFD011DBA04DE00753236 /* 2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 955EFCFE1DBA04DE00753236 /* 2.pdf */; };
 		955EFD021DBA04DE00753236 /* 3.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 955EFCFF1DBA04DE00753236 /* 3.pdf */; };
-		957077B51E3604770038F894 /* Regex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 957077B41E3604770038F894 /* Regex.framework */; };
+		95D46EC91F85002200307996 /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D46EC81F85002200307996 /* Regex.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,7 @@
 		955EFCFD1DBA04DE00753236 /* 1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1.pdf; sourceTree = "<group>"; };
 		955EFCFE1DBA04DE00753236 /* 2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 2.pdf; sourceTree = "<group>"; };
 		955EFCFF1DBA04DE00753236 /* 3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 3.pdf; sourceTree = "<group>"; };
-		957077B41E3604770038F894 /* Regex.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Regex.framework; path = "../../../Library/Developer/Xcode/DerivedData/PDFCompare-hetcxfyxdfhoqyganuncjduvkhgc/Build/Products/Debug/Regex.framework"; sourceTree = "<group>"; };
+		95D46EC81F85002200307996 /* Regex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Regex.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +46,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				957077B51E3604770038F894 /* Regex.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,7 +66,6 @@
 				954897DA1DB8FA7600AB15E3 /* PDFCompare */,
 				954897E51DB8FA7700AB15E3 /* PDFCompareTests */,
 				954897D91DB8FA7600AB15E3 /* Products */,
-				957077B31E3604770038F894 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,6 +84,7 @@
 				954897DC1DB8FA7600AB15E3 /* Info.plist */,
 				954897DB1DB8FA7600AB15E3 /* PDFCompare.h */,
 				954897F21DB8FAB200AB15E3 /* PDFDocument.swift */,
+				95D46EC81F85002200307996 /* Regex.swift */,
 			);
 			path = PDFCompare;
 			sourceTree = "<group>";
@@ -108,14 +107,6 @@
 				955EFCFF1DBA04DE00753236 /* 3.pdf */,
 			);
 			name = TestAssets;
-			sourceTree = "<group>";
-		};
-		957077B31E3604770038F894 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				957077B41E3604770038F894 /* Regex.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,7 +167,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 0900;
-				ORGANIZATIONNAME = VIMN;
+				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					954897D71DB8FA7600AB15E3 = {
 						CreatedOnToolsVersion = 8.0;
@@ -192,7 +183,7 @@
 				};
 			};
 			buildConfigurationList = 954897D21DB8FA7600AB15E3 /* Build configuration list for PBXProject "PDFCompare" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -235,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				954897F41DB8FAB200AB15E3 /* PDFDocument.swift in Sources */,
+				95D46EC91F85002200307996 /* Regex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,7 +415,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.richardnees.PDFCompareTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -437,7 +429,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.richardnees.PDFCompareTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
