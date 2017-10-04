@@ -10,14 +10,14 @@ class PDFDropView: NSImageView {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.register(forDraggedTypes: [NSPDFPboardType])
+        self.registerForDraggedTypes([.pdf])
     }
     
     override func draggingEntered(_ sender: NSDraggingInfo) -> NSDragOperation {
         return NSDragOperation.every
     }
     
-    override func draggingEnded(_ sender: NSDraggingInfo?) {
+    override func draggingEnded(_ sender: NSDraggingInfo) {
         delegate?.didDrag(pdfDropView: self)
     }
 }
