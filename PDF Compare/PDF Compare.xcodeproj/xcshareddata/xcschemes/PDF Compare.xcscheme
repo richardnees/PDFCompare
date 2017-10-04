@@ -3,23 +3,9 @@
    LastUpgradeVersion = "0900"
    version = "1.3">
    <BuildAction
-      parallelizeBuildables = "YES"
+      parallelizeBuildables = "NO"
       buildImplicitDependencies = "YES">
       <BuildActionEntries>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9570779E1E3603120038F894"
-               BuildableName = "Regex.framework"
-               BlueprintName = "Regex"
-               ReferencedContainer = "container:../Regex/Regex.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
          <BuildActionEntry
             buildForTesting = "YES"
             buildForRunning = "YES"
@@ -57,6 +43,16 @@
       language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "954897E01DB8FA7700AB15E3"
+               BuildableName = "PDFCompareTests.xctest"
+               BlueprintName = "PDFCompareTests"
+               ReferencedContainer = "container:../PDFCompare/PDFCompare.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
