@@ -7,20 +7,42 @@ import Cocoa
 import Quartz
 import PDFCompare
 
-if
-    let originalURL = Bundle.main.urlForImageResource("1"),
-    let sameDataURL = Bundle.main.urlForImageResource("2"),
-    let differentDataURL = Bundle.main.urlForImageResource("3"),
-    let originalPDFDocument = PDFDocument(url: originalURL),
-    let sameDataPDFDocument = PDFDocument(url: sameDataURL),
-    let differentDataPDFDocument = PDFDocument(url: differentDataURL) {
-    
-    let compare1and1Data = originalPDFDocument.compareData(to: originalPDFDocument)
-    let compare1and1Metadata = originalPDFDocument.compareMetadata(to: originalPDFDocument)
-
-    let compare1and2Data = originalPDFDocument.compareData(to: sameDataPDFDocument)
-    let compare1and2Metadata = originalPDFDocument.compareMetadata(to: sameDataPDFDocument)
-
-    let compare1and3Data = originalPDFDocument.compareData(to: differentDataPDFDocument)
-    let compare1and3Metadata = originalPDFDocument.compareMetadata(to: differentDataPDFDocument)
+guard let originalURL = Bundle.main.urlForImageResource(NSImage.Name("1")) else {
+    print("Missing originalURL")
+    exit(0)
 }
+
+guard let sameDataURL = Bundle.main.urlForImageResource(NSImage.Name("2")) else {
+    print("Missing sameDataURL")
+    exit(0)
+}
+
+guard let differentDataURL = Bundle.main.urlForImageResource(NSImage.Name("3")) else {
+    print("Missing differentDataURL")
+    exit(0)
+}
+
+guard let originalPDFDocument = PDFDocument(url: originalURL) else {
+    print("Missing originalPDFDocument")
+    exit(0)
+}
+
+guard let sameDataPDFDocument = PDFDocument(url: sameDataURL) else {
+    print("Missing sameDataPDFDocument")
+    exit(0)
+}
+
+guard let differentDataPDFDocument = PDFDocument(url: differentDataURL) else {
+    print("Missing differentDataPDFDocument")
+    exit(0)
+}
+
+let a = originalPDFDocument.compareData(to: originalPDFDocument)
+let b = originalPDFDocument.compareMetadata(to: originalPDFDocument)
+
+let c = originalPDFDocument.compareData(to: sameDataPDFDocument)
+let d = originalPDFDocument.compareMetadata(to: sameDataPDFDocument)
+
+let e = originalPDFDocument.compareData(to: differentDataPDFDocument)
+let f = originalPDFDocument.compareMetadata(to: differentDataPDFDocument)
+
