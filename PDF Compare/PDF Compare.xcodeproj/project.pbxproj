@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9509D3921E36054D009B9EED /* Regex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9509D3911E36054D009B9EED /* Regex.framework */; };
-		9509D3931E36054D009B9EED /* Regex.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9509D3911E36054D009B9EED /* Regex.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9509D3951E36054D009B9EED /* PDFCompare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9509D3941E36054D009B9EED /* PDFCompare.framework */; };
 		9509D3961E36054D009B9EED /* PDFCompare.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9509D3941E36054D009B9EED /* PDFCompare.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9509D3991E36083B009B9EED /* PDFDropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9509D3981E36083B009B9EED /* PDFDropView.swift */; };
@@ -25,7 +23,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9509D3931E36054D009B9EED /* Regex.framework in Embed Frameworks */,
 				9509D3961E36054D009B9EED /* PDFCompare.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -34,7 +31,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9509D3911E36054D009B9EED /* Regex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Regex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9509D3941E36054D009B9EED /* PDFCompare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PDFCompare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9509D3981E36083B009B9EED /* PDFDropView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFDropView.swift; sourceTree = "<group>"; };
 		9570777E1E3602B20038F894 /* PDF Compare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PDF Compare.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,7 +46,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9509D3921E36054D009B9EED /* Regex.framework in Frameworks */,
 				9509D3951E36054D009B9EED /* PDFCompare.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -92,7 +87,6 @@
 			isa = PBXGroup;
 			children = (
 				9509D3941E36054D009B9EED /* PDFCompare.framework */,
-				9509D3911E36054D009B9EED /* Regex.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

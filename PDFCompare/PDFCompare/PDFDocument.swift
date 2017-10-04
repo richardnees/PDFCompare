@@ -1,6 +1,5 @@
 import Foundation
 import Quartz
-import Regex
 
 func ==(lhs: [AnyHashable: Any], rhs: [AnyHashable: Any] ) -> Bool {
     return NSDictionary(dictionary: lhs).isEqual(to: rhs)
