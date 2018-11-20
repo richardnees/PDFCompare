@@ -6,9 +6,9 @@ let testBundle = Bundle(for: PDFDocumentTests.self)
 
 class PDFDocumentTests: XCTestCase {
 
-    let originalPDFDocument = PDFDocument(url: testBundle.urlForImageResource(NSImage.Name(rawValue: "1"))!)!
-    let sameDataPDFDocument = PDFDocument(url: testBundle.urlForImageResource(NSImage.Name(rawValue: "2"))!)!
-    let differentDataPDFDocument = PDFDocument(url: testBundle.urlForImageResource(NSImage.Name(rawValue: "3"))!)!
+    let originalPDFDocument = PDFDocument(url: testBundle.urlForImageResource("1")!)!
+    let sameDataPDFDocument = PDFDocument(url: testBundle.urlForImageResource("2")!)!
+    let differentDataPDFDocument = PDFDocument(url: testBundle.urlForImageResource("3")!)!
 
     override func setUp() {
         super.setUp()

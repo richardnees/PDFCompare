@@ -16,7 +16,7 @@ public class Regex {
     }
     
     public func test(input: String) -> Bool {
-        let range = NSRange(location: 0, length: input.characters.count)
+        let range = NSRange(location: 0, length: input.count)
         let matches = internalExpression.matches(in: input, options: [], range: range)
         return matches.count > 0
     }
